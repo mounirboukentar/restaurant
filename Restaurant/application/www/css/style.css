@@ -1,0 +1,44 @@
+header {
+    display: flex;
+    justify-content: space-around;
+}
+body{
+    background-image: url("../images/background.png");
+}
+header a {
+    text-decoration: none;
+    color: #8A8E4F;
+}
+footer li{
+    display: inline-block;
+}
+footer {
+    text-align: center;
+}
+h2{
+    color: #8A8E4F;
+}
+h3{
+    color: #ADC0F5;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+nav button{
+    background-color: darkgreen;
+    color: white;
+}
+table {
+    width: 80%;
+    margin: auto;
+}
+#choice{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#homer{
+   display: flex;
+    margin: auto;
+}

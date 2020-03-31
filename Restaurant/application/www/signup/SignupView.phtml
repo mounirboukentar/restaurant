@@ -1,0 +1,35 @@
+<h1><i class="fa fa-user" aria-hidden="true"></i>Création d'un compte client</h1>
+<form action="<?= $requestUrl ?>/signup" method="post">
+    <fieldset>
+        <legend><i class="fa fa-book" aria-hidden="true"></i>Identité et coordonnées</legend>
+        <label for="nom" id="nom">Nom :</label>
+        <input type="text" name="nom" id="nom" /><br />
+
+        <label for="prenom" id="prenom">Prenom :</label>
+        <input type="text" name="prenom" id="prenom" /><br />
+
+        <label for="naissance" id="naissance">Date de naissance :</label>
+        <input type="date" name="naissance" id="naissance"/><br />
+
+        <label for="adresse" id="adresse">Adresse :</label>
+        <textarea name="adresse" id="adresse" rows="10" cols="0"></textarea><br />
+
+        <label for="ville" id="ville">Ville :</label>
+        <input type="text" name="ville" id="ville"/><br/>
+
+        <label for="codepostal" id="codepostal">Code postal :</label>
+        <input type="text" name="codepostal" id="codepostal"/><br/>
+
+        <label for="numero" id="numero">Numéro :</label>
+        <input type="text" name="numero" id="numero"/>
+    </fieldset>
+    <fieldset>
+        <legend><i class="fa fa-lock" aria-hidden="true">Informations d'authentification</i></legend>
+        <label for="mail" id="mail">E-mail :</label>
+        <input type="text" name="mail" id="mail" /><br />
+
+        <label for="passeword" id="passeword">Mot de passe :</label>
+        <input type="text" name="passeword" id="passeword" /><br />
+    </fieldset>
+    <input type="submit">
+</form>

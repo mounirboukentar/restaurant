@@ -1,0 +1,30 @@
+<h1><i class="fa fa-check" aria-hidden="true"></i>Payer la commande</h1>
+<div id="client">
+    <p><?= $_SESSION["nom"]; ?><?= $_SESSION['prenom']; ?></p>
+    <p><?= $_SESSION['adresse']; ?></p>
+     <p><?= $_SESSION['codepostal']; ?><?= $_SESSION['ville']; ?>
+
+</div>
+<h2>Récapitulatif de la commande</h2>
+<div id="recap">
+    <table>
+    <?php foreach($order as $orders): ?>
+        <tr>
+            <td><img src="<?= $wwwUrl.$orders['photo']; ?>"></td>
+            <td><h3><?php echo $orders['name']; ?></h3></td>
+            <td><?php echo $orders['quantity']; ?></td>
+            <td><?php echo $orders['quantity']*$orders['salePrice']; ?>€</td>
+        </tr>
+    <?php endforeach; ?>
+        <tr>
+            <td><p>Montant HT: <?php echo $order[0]['orderTotal']; ?>€</p></td>
+            <td><p>Montant de la TVA: <?php echo $order[0]['orderTotal']*"0.20"; ?>€</p></td>
+            <td><p>Montant TTC : <?php echo $order[0]['orderTotal']+$order[0]['orderTotal']*"0.20"; ?>€</p></td>
+        </tr>
+    </table>
+    <p class="datecommande"><?php echo $order[0]['orderDate'];?></p>
+    <hr>
+    <a href='<?= $requestUrl ?>/payement'><button>Payer</button></a>
+    <a href='<?= $requestUrl ?>/'><button>annuler</button></a>
+</div>
+

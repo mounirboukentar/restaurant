@@ -1,0 +1,12 @@
+<h1><i class="fa fa-lock" aria-hidden="true">Se connecter avec un compte utilisateur</i></h1>
+<form action="<?= $requestUrl ?>/login" method="post">
+    <fieldset>
+            <legend><i class="fa fa-lock" aria-hidden="true">Informations d'authentification</i></legend>
+            <label for="mail" id="mail">E-mail :</label>
+            <input type="text" name="mail" id="mail" /><br />
+
+            <label for="passeword" id="passeword">Mot de passe :</label>
+            <input type="text" name="passeword" id="passeword" /><br />
+        </fieldset>
+    <input type="submit"/>
+</form>

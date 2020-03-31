@@ -1,0 +1,15 @@
+<h1><i class="fa fa-cutlery" aria-hidden="true"></i>Réservation d'une table</h1>
+<form method="post" action="<?= $requestUrl ?>/reservation">
+    <fieldset>
+        <legend>Informations</legend>
+        <label for="date" >Date de la réservation</label>
+        <input type="date" name="date" id="reserver">
+        <br />
+        <label for="heure" id="heure">Heure de la réservation</label>
+        <input type="time" name="heure" id="heure">
+        <br />
+        <label for="nombre" id="nombre">Nombre de personnes</label>
+        <input type="number" name="number" value="1" min="1" max="10">
+    </fieldset>
+    <input type="submit">
+</form>
